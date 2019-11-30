@@ -1,0 +1,332 @@
+{
+	"new html file": {
+		"scope": "html",
+		"prefix": ["!", "with", "WithNavBar"],
+		"body": [
+			"<WithNavBar",
+			"\ttitle=\"${1}\"",
+			">",
+			"\t<view slot=\"page-content\">",
+			"\t\t${2}",
+			"\t</view>",
+			"</WithNavBar>",
+		]
+	},
+	"view with class": {
+		"scope": "html",
+		"prefix": "v",
+		"body": [
+			"<view class=\"${1}\">${2}</view>"
+		]
+	},
+	"if": {
+		"scope": "html",
+		"prefix": ["wx:if", "if"],
+		"body": [
+			"wx:if=\"{{${1}}}\""
+		]
+	},
+	"for": {
+		"scope": "html",
+		"prefix": ["wx:for", "for"],
+		"body": [
+			"wx:for=\"{{${1}}}\""
+		]
+	},
+	"for-item": {
+		"scope": "html",
+		"prefix": ["wx:if-item", "item"],
+		"body": [
+			"wx:for-item=\"${1}\""
+		]
+	},
+	"for-index": {
+		"scope": "html",
+		"prefix": ["wx:if-index", "index"],
+		"body": [
+			"wx:for-index=\"{{${1}}}\""
+		]
+	},
+	"class": {
+		"scope": "html",
+		"prefix": ["c", "class"],
+		"body": [
+			"class=\"${1}\""
+		]
+	},
+	"style": {
+		"scope": "html",
+		"prefix": ["st", "style"],
+		"body": ["style=\"${1}\""]
+	},
+	"view with for": {
+		"scope": "html",
+		"prefix": "vf",
+		"body": [
+			"<view",
+			"\tclass=\"${1}\"",
+			"\twx:for=\"{{${2}}}\"",
+			"\twx:for-item=\"${3}\"",
+			"\twx:key=\"${4}\"",
+			">",
+			"\t${5}",
+			"</view>"
+		]
+	},
+	"block with for": {
+		"scope": "html",
+		"prefix": "bf",
+		"body": [
+			"<block",
+			"\twx:for=\"{{${2}}}\"",
+			"\twx:for-item=\"${3}\"",
+			"\twx:key=\"${4}\"",
+			">",
+			"\t${5}",
+			"</block>"
+		]
+	},
+	"block with if": {
+		"scope": "html",
+		"prefix": "vi",
+		"body": [
+			"<block wx:if=\"{{${2}}}\">",
+			"\t${3}",
+			"</block>"
+		]
+	},
+	"view with if": {
+		"scope": "html",
+		"prefix": "vi",
+		"body": [
+			"<view",
+			"\tclass=\"${1}\"",
+			"\twx:if=\"{{${2}}}\"",
+			">",
+			"\t${3}",
+			"</view>"
+		]
+	},
+	"bind tap": {
+		"scope": "html",
+		"prefix": ["bind:tap", "tap", "bind"],
+		"body": [
+			"bind:tap=\"${1}\""
+		]
+	},
+	"catch tap": {
+		"scope": "html",
+		"prefix": ["catch:tap", "tap", "catch"],
+		"body": [
+			"catch:tap=\"${1}\""
+		]
+	},
+	"bind input": {
+		"scope": "html",
+		"prefix": ["bind:input", "bi", "bind"],
+		"body": [
+			"bind:input=\"${1}\""
+		]
+	},
+	"catch input": {
+		"scope": "html",
+		"prefix": ["catch:input", "ci", "catch"],
+		"body": [
+			"catch:input=\"${1}\""
+		]
+	},
+	"view with content slot": {
+		"scope": "html",
+		"prefix": "vc",
+		"body": [
+			"<view slot=\"page-content\">",
+			"\t${2}",
+			"</view>",
+		]
+	},
+	"scroll view": {
+		"scope": "html",
+		"prefix": ["scroll", "scroll-view"],
+		"body": [
+			"<scroll-view",
+			"\tclass=\"${1}\"",
+			"\tscroll-${2|x,y|}",
+			"\tenable-flex",
+			">",
+			"\t${3}",
+			"</scroll-view>"
+		]
+	},
+	"button": {
+		"scope": "html",
+		"prefix": ["b", "button"],
+		"body": [
+			"<button",
+			"\tclass=\"${1}\"",
+			"\topen-type=${2|share, contact, getPhoneNumber, getUserInfo, launchApp, openSetting, feedback|}",
+			"\thover-class=\"none\""
+		]
+	},
+	"input": {
+		"scope": "html",
+		"prefix": ["i", "input"],
+		"body": [
+			"<input",
+			"\tclass=\"${1}\"",
+			"\ttype=${2|text, number, idcard, digit|}",
+			"\tvalue=\"{{${3}}}\"",
+			"\tconfirm-type=${4|send, search, next, go, done|}",
+			"\tplaceholder=\"${5}\"",
+			"\tplaceholder-class=\"${6}\"",
+			"\tbind:input=\"${7}\"",
+			"\tbind:focus=\"${8}\"",
+			"\tbind:blur=\"${9}\"",
+			"\tbind:confirm=\"${10}\"",
+			"/>"
+		]
+	},
+	
+	"form": {
+		"scope": "html",
+		"prefix": ["f", "form"],
+		"body": [
+			"<form",
+			"\treport-submit",
+			"\tbindsubmit=\"${1}\"",
+			"\tbindreset=\"${2}\"",
+			">",
+			"\t${3}",
+			"</form>"
+		]
+	},
+	"picker": {
+		"scope": "html",
+		"prefix": ["p", "picker"],
+		"body": [
+			"<picker",
+			"\tclass=\"${1}\"",
+			"\tmode=\"${2|selector, multiSelector, time, date, region|}\"",
+			"\t${3}",
+			"</picker>"
+		]
+	},
+	"slider": {
+		"scope": "html",
+		"prefix": ["slider"],
+		"body": [
+			"<slider",
+			"\tmin=\"${1}\"",
+			"\tmax=\"${2}\"",
+			"\tstep=\"${3:1}\"",
+			"\tvalue=\"${4}\"",
+			"\tbackgroundColor=\"${5}\"",
+			"\tactiveColor=\"${6}\"",
+			"\tblock-size=\"${7:28}\"",
+			"\tblock-color=\"${8}\"",
+			"\tbindchange=\"${9}\"",
+			"\tbindchanging=\"${10}\"",
+			"/>"
+		]
+	},
+	"switch": {
+		"scope": "html",
+		"prefix": ["switch"],
+		"body": [
+			"<switch",
+			"\tchecked=\"{{${1|true, false|}}}\"",
+			"\ttype=\"${2|switch, checkbox|}\"",
+			"\tcolor=\"${3}\"",
+			"\tbindchange=\"${4}\"",
+			"/>"
+		]
+	},
+	"textarea": {
+		"scope": "html",
+		"prefix": ["textarea"],
+		"body": [
+			"<textarea",
+			"\tclass=\"${1}\"",
+			"\tvalue=\"{{${2}}}\"",
+			"\tconfirm-type=${3|send, search, next, go, done|}",
+			"\tplaceholder=\"${4}\"",
+			"\tplaceholder-class=\"${5}\"",
+			"\tmaxlength=\"${6}\"",
+			"\tbind:input=\"${7}\"",
+			"\tbind:focus=\"${8}\"",
+			"\tbind:blur=\"${9}\"",
+			"\tbind:confirm=\"${10}\"",
+			"/>"
+		]
+	},
+	"swiper": {
+		"scope": "html",
+		"prefix": ["swiper"],
+		"body": [
+			"<swiper",
+			"\tclass=\"${1}\"",
+			"\tindicator-dots=\"{{${2|true, false|}}}\"",
+			"\tindicator-color=\"${3}\"",
+			"\tindicator-active-color=\"${4}\"",
+			"\tautoplay=\"{{${5|true, false|}}}\"",
+			"\tinterval=\"${6:5000}\"",
+			"\tduration=\"${7:500}\"",
+			"\tcircular=\"${8:|true, false|}\"",
+			"\t${9}",
+			"</swiper>"
+		]
+	},
+	"swiper-item": {
+		"scope": "html",
+		"prefix": ["si", "swiper-item"],
+		"body": [
+			"<swiper-item",
+			"\tclass=\"${1}\"",
+			"\titem-id=\"${2}\"",
+			">",
+			"\t${3}",
+			"</swiper-item>"
+		]
+	},
+	"imageloader": {
+		"scope": "html",
+		"prefix": "img",
+		"body": []
+	},
+	"canvas": {
+		"scope": "html",
+		"prefix": ["can", "canvas"],
+		"body": [
+			"<canvas",
+			"\tclass=\"${1}\"",
+			"\tcanvas-id=\"${2}\"",
+			"/>"
+		]
+	},
+	"camera": {
+		"scope": "html",
+		"prefix": ["cam", "camera"],
+		"body": [
+			"<camera",
+			"\tmode=\"${1|normal, scanCode|}\"",
+			"\tdevice-position=\"${2|front, back|}\"",
+			"\tflash=\"${3|auto, on, off, torch|}\"",
+			"\tframe-size=\"${4:medium|small, medium, large|}\"",
+			"\tbindstop=\"${5}\"",
+			"\tbinderror=\"${6}\"",
+			"\tbinddone=\"${7}\"",
+			"\tbindscancode=\"${8}\"",
+			"/>"
+		]
+	},
+	"avatar": {
+		"scope": "html",
+		"prefix": "a",
+		"body": []
+	},
+	"loading": {
+		"scope": "html",
+		"prefix": "<Loading wx:if=\"{{loading}}\"\\>",
+		"body": []
+	},
+	
+}

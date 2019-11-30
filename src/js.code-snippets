@@ -1,0 +1,99 @@
+{
+	// Place your wxml workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"set data": {
+		"scope": "javascript,typescript",
+		"prefix": "setData",
+		"body": "this.setData({${1}})"
+	},
+	"groot": {
+		"scope": "javascript,typescript",
+		"prefix": "groot",
+		"body": [
+			"groot(pageOption)",
+			"\t.create()",
+		]
+	},
+	"withQuery": {
+		"scope": "javascript,typescript",
+		"prefix": "withQuery",
+		"body": [
+			".withQuery({",
+			"\tquery: ${1},",
+			"\tcomputeQlData(data){",
+			"\t\t${2}",
+			"\t}",
+			")}",
+		]
+	},
+	"connect": {
+		"scope": "javascript,typescript",
+		"prefix": "connect",
+		"body": [
+			".connect(${1})",
+		]
+	},
+	"variables": {
+		"scope": "javascript,typescript",
+		"prefix": ["this.variables", "variables"],
+		"body": [
+			"this.variables = getVariables({${1}}, ${2})"
+		]
+	},
+	"pageOption": {
+		"scope": "javascript,typescript",
+		"prefix": "pageOption",
+		"body": [
+			"const pageOption = {",
+			"\ttype: groot.appType.${1|page, component|}",
+			"\t${2}",
+			"}",
+		]
+	},
+	"const =": {
+		"scope": "javascript,typescript",
+		"prefix": ["c=", "const {"],
+		"body": [
+			"const { ${1} } = $2",
+		]
+	},
+	"onShareAppMessage": {
+		"scope": "javascript,typescript",
+		"prefix": ["onShareAppMessage", "share"],
+		"body": [
+			"onShareAppMessage () {",
+			"\t${1}",
+			"}"
+		]
+	},
+	"function": {
+		"scope": "javascript,typescript",
+		"prefix": "function",
+		"body": [
+			"function ${1:foo}(${2}) {",
+			"\t${3}",
+			"}"
+		]
+	},
+	"promise": {
+		"scope": "javascript,typescript",
+		"prefix": ["new Promise", "promise"],
+		"body": [
+			"new Promise((resolve, reject) => {${1}})",
+		]
+	}
+}
