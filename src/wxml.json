@@ -9,7 +9,7 @@
 			"\t<view slot=\"page-content\">",
 			"\t\t${2}",
 			"\t</view>",
-			"</WithNavBar>",
+			"</WithNavBar>"
 		]
 	},
 	"view with class": {
@@ -141,7 +141,7 @@
 		"body": [
 			"<view slot=\"page-content\">",
 			"\t${2}",
-			"</view>",
+			"</view>"
 		]
 	},
 	"scroll view": {
@@ -327,6 +327,6 @@
 		"scope": "html",
 		"prefix": "<Loading wx:if=\"{{loading}}\"\\>",
 		"body": []
-	},
+	}
 	
 }

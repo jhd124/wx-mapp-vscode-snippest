@@ -14,11 +14,11 @@
 		"snippets": [
 			{
 				"language": "javascript",
-				"path": "./js.code-snippets"
+				"path": "./js.json"
 			},
 			{
 				"language": "html",
-				"path": "./wxml.code-snippets"
+				"path": "./wxml.json"	
 			}
 		]
 	},
