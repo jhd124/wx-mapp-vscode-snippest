@@ -1,7 +1,11 @@
 {
 	"new html file": {
 		"scope": "html",
-		"prefix": ["!", "with", "WithNavBar"],
+		"prefix": [
+			"!",
+			"with",
+			"WithNavBar"
+		],
 		"body": [
 			"<WithNavBar",
 			"\ttitle=\"${1}\"",
@@ -22,43 +26,63 @@
 	},
 	"if": {
 		"scope": "html",
-		"prefix": ["wx:if", "if"],
+		"prefix": [
+			"wx:if",
+			"if"
+		],
 		"body": [
 			"wx:if=\"{{${1}}}\""
 		]
 	},
 	"for": {
 		"scope": "html",
-		"prefix": ["wx:for", "for"],
+		"prefix": [
+			"wx:for",
+			"for"
+		],
 		"body": [
 			"wx:for=\"{{${1}}}\""
 		]
 	},
 	"for-item": {
 		"scope": "html",
-		"prefix": ["wx:if-item", "item"],
+		"prefix": [
+			"wx:if-item",
+			"item"
+		],
 		"body": [
 			"wx:for-item=\"${1}\""
 		]
 	},
 	"for-index": {
 		"scope": "html",
-		"prefix": ["wx:if-index", "index"],
+		"prefix": [
+			"wx:if-index",
+			"index"
+		],
 		"body": [
 			"wx:for-index=\"{{${1}}}\""
 		]
 	},
 	"class": {
 		"scope": "html",
-		"prefix": ["c", "class"],
+		"prefix": [
+			"c",
+			"class"
+		],
 		"body": [
 			"class=\"${1}\""
 		]
 	},
 	"style": {
 		"scope": "html",
-		"prefix": ["st", "style"],
-		"body": ["style=\"${1}\""]
+		"prefix": [
+			"st",
+			"style"
+		],
+		"body": [
+			"style=\"${1}\""
+		]
 	},
 	"view with for": {
 		"scope": "html",
@@ -110,28 +134,44 @@
 	},
 	"bind tap": {
 		"scope": "html",
-		"prefix": ["bind:tap", "tap", "bind"],
+		"prefix": [
+			"bind:tap",
+			"tap",
+			"bind"
+		],
 		"body": [
 			"bind:tap=\"${1}\""
 		]
 	},
 	"catch tap": {
 		"scope": "html",
-		"prefix": ["catch:tap", "tap", "catch"],
+		"prefix": [
+			"catch:tap",
+			"tap",
+			"catch"
+		],
 		"body": [
 			"catch:tap=\"${1}\""
 		]
 	},
 	"bind input": {
 		"scope": "html",
-		"prefix": ["bind:input", "bi", "bind"],
+		"prefix": [
+			"bind:input",
+			"bi",
+			"bind"
+		],
 		"body": [
 			"bind:input=\"${1}\""
 		]
 	},
 	"catch input": {
 		"scope": "html",
-		"prefix": ["catch:input", "ci", "catch"],
+		"prefix": [
+			"catch:input",
+			"ci",
+			"catch"
+		],
 		"body": [
 			"catch:input=\"${1}\""
 		]
@@ -147,7 +187,10 @@
 	},
 	"scroll view": {
 		"scope": "html",
-		"prefix": ["scroll", "scroll-view"],
+		"prefix": [
+			"scroll",
+			"scroll-view"
+		],
 		"body": [
 			"<scroll-view",
 			"\tclass=\"${1}\"",
@@ -160,23 +203,29 @@
 	},
 	"button": {
 		"scope": "html",
-		"prefix": ["b", "button"],
+		"prefix": [
+			"b",
+			"button"
+		],
 		"body": [
 			"<button",
 			"\tclass=\"${1}\"",
-			"\topen-type=${2|share, contact, getPhoneNumber, getUserInfo, launchApp, openSetting, feedback|}",
+			"\topen-type=${2|share,contact,getPhoneNumber,getUserInfo,launchApp,openSetting,feedback|}",
 			"\thover-class=\"none\""
 		]
 	},
 	"input": {
 		"scope": "html",
-		"prefix": ["i", "input"],
+		"prefix": [
+			"i",
+			"input"
+		],
 		"body": [
 			"<input",
 			"\tclass=\"${1}\"",
-			"\ttype=${2|text, number, idcard, digit|}",
+			"\ttype=${2|text,number,idcard,digit|}",
 			"\tvalue=\"{{${3}}}\"",
-			"\tconfirm-type=${4|send, search, next, go, done|}",
+			"\tconfirm-type=${4|send,search,next,go,done|}",
 			"\tplaceholder=\"${5}\"",
 			"\tplaceholder-class=\"${6}\"",
 			"\tbind:input=\"${7}\"",
@@ -186,10 +235,12 @@
 			"/>"
 		]
 	},
-	
 	"form": {
 		"scope": "html",
-		"prefix": ["f", "form"],
+		"prefix": [
+			"f",
+			"form"
+		],
 		"body": [
 			"<form",
 			"\treport-submit",
@@ -202,18 +253,23 @@
 	},
 	"picker": {
 		"scope": "html",
-		"prefix": ["p", "picker"],
+		"prefix": [
+			"p",
+			"picker"
+		],
 		"body": [
 			"<picker",
 			"\tclass=\"${1}\"",
-			"\tmode=\"${2|selector, multiSelector, time, date, region|}\"",
+			"\tmode=\"${2|selector,multiSelector,time,date,region|}\"",
 			"\t${3}",
 			"</picker>"
 		]
 	},
 	"slider": {
 		"scope": "html",
-		"prefix": ["slider"],
+		"prefix": [
+			"slider"
+		],
 		"body": [
 			"<slider",
 			"\tmin=\"${1}\"",
@@ -231,11 +287,13 @@
 	},
 	"switch": {
 		"scope": "html",
-		"prefix": ["switch"],
+		"prefix": [
+			"switch"
+		],
 		"body": [
 			"<switch",
-			"\tchecked=\"{{${1|true, false|}}}\"",
-			"\ttype=\"${2|switch, checkbox|}\"",
+			"\tchecked=\"{{${1|true,false|}}}\"",
+			"\ttype=\"${2|switch,checkbox|}\"",
 			"\tcolor=\"${3}\"",
 			"\tbindchange=\"${4}\"",
 			"/>"
@@ -243,12 +301,14 @@
 	},
 	"textarea": {
 		"scope": "html",
-		"prefix": ["textarea"],
+		"prefix": [
+			"textarea"
+		],
 		"body": [
 			"<textarea",
 			"\tclass=\"${1}\"",
 			"\tvalue=\"{{${2}}}\"",
-			"\tconfirm-type=${3|send, search, next, go, done|}",
+			"\tconfirm-type=${3|send,search,next,go,done|}",
 			"\tplaceholder=\"${4}\"",
 			"\tplaceholder-class=\"${5}\"",
 			"\tmaxlength=\"${6}\"",
@@ -261,24 +321,29 @@
 	},
 	"swiper": {
 		"scope": "html",
-		"prefix": ["swiper"],
+		"prefix": [
+			"swiper"
+		],
 		"body": [
 			"<swiper",
 			"\tclass=\"${1}\"",
-			"\tindicator-dots=\"{{${2|true, false|}}}\"",
+			"\tindicator-dots=\"{{${2|true,false|}}}\"",
 			"\tindicator-color=\"${3}\"",
 			"\tindicator-active-color=\"${4}\"",
-			"\tautoplay=\"{{${5|true, false|}}}\"",
+			"\tautoplay=\"{{${5|true,false|}}}\"",
 			"\tinterval=\"${6:5000}\"",
 			"\tduration=\"${7:500}\"",
-			"\tcircular=\"${8:|true, false|}\"",
+			"\tcircular=\"${8:|true,false|}\"",
 			"\t${9}",
 			"</swiper>"
 		]
 	},
 	"swiper-item": {
 		"scope": "html",
-		"prefix": ["si", "swiper-item"],
+		"prefix": [
+			"si",
+			"swiper-item"
+		],
 		"body": [
 			"<swiper-item",
 			"\tclass=\"${1}\"",
@@ -295,7 +360,10 @@
 	},
 	"canvas": {
 		"scope": "html",
-		"prefix": ["can", "canvas"],
+		"prefix": [
+			"can",
+			"canvas"
+		],
 		"body": [
 			"<canvas",
 			"\tclass=\"${1}\"",
@@ -305,13 +373,16 @@
 	},
 	"camera": {
 		"scope": "html",
-		"prefix": ["cam", "camera"],
+		"prefix": [
+			"cam",
+			"camera"
+		],
 		"body": [
 			"<camera",
-			"\tmode=\"${1|normal, scanCode|}\"",
-			"\tdevice-position=\"${2|front, back|}\"",
-			"\tflash=\"${3|auto, on, off, torch|}\"",
-			"\tframe-size=\"${4:medium|small, medium, large|}\"",
+			"\tmode=\"${1|normal,scanCode|}\"",
+			"\tdevice-position=\"${2|front,back|}\"",
+			"\tflash=\"${3|auto,on,off,torch|}\"",
+			"\tframe-size=\"${4:medium|small,medium,large|}\"",
 			"\tbindstop=\"${5}\"",
 			"\tbinderror=\"${6}\"",
 			"\tbinddone=\"${7}\"",
@@ -329,5 +400,4 @@
 		"prefix": "<Loading wx:if=\"{{loading}}\"\\>",
 		"body": []
 	}
-	
 }

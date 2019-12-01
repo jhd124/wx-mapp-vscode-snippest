@@ -21,7 +21,7 @@
 			"\tcomputeQlData(data){",
 			"\t\t${2}",
 			"\t}",
-			")}"
+			"})"
 		]
 	},
 	"connect": {
@@ -33,7 +33,10 @@
 	},
 	"variables": {
 		"scope": "javascript,typescript",
-		"prefix": ["this.variables", "variables"],
+		"prefix": [
+			"this.variables",
+			"variables"
+		],
 		"body": [
 			"this.variables = getVariables({${1}}, ${2})"
 		]
@@ -43,21 +46,27 @@
 		"prefix": "pageOption",
 		"body": [
 			"const pageOption = {",
-			"\ttype: groot.appType.${1|page, component|}",
+			"\ttype: groot.appType.${1|page,component|}",
 			"\t${2}",
 			"}"
 		]
 	},
 	"const =": {
 		"scope": "javascript,typescript",
-		"prefix": ["c=", "const {"],
+		"prefix": [
+			"c=",
+			"const {"
+		],
 		"body": [
 			"const { ${1} } = $2"
 		]
 	},
 	"onShareAppMessage": {
 		"scope": "javascript,typescript",
-		"prefix": ["onShareAppMessage", "share"],
+		"prefix": [
+			"onShareAppMessage",
+			"share"
+		],
 		"body": [
 			"onShareAppMessage () {",
 			"\t${1}",
@@ -75,7 +84,10 @@
 	},
 	"promise": {
 		"scope": "javascript,typescript",
-		"prefix": ["new Promise", "promise"],
+		"prefix": [
+			"new Promise",
+			"promise"
+		],
 		"body": [
 			"new Promise((resolve, reject) => {${1}})"
 		]
