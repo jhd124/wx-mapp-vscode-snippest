@@ -1,7 +1,10 @@
 {
 	"set data": {
 		"scope": "javascript,typescript",
-		"prefix": "setData",
+		"prefix": [
+			"setData",
+			"sd"
+		],
 		"body": "this.setData({${1}})"
 	},
 	"groot": {
@@ -90,6 +93,16 @@
 		],
 		"body": [
 			"new Promise((resolve, reject) => {${1}})"
+		]
+	},
+	"export function": {
+		"scope": "javascript,typescript",
+		"prefix": [
+			"export function",
+			"ef"
+		],
+		"body": [
+			"export function(${1}){${2}};"
 		]
 	}
 }
