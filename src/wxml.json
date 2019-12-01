@@ -5,6 +5,7 @@
 		"body": [
 			"<WithNavBar",
 			"\ttitle=\"${1}\"",
+			"\tshowNavigateBack",
 			">",
 			"\t<view slot=\"page-content\">",
 			"\t\t${2}",
