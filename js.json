@@ -104,5 +104,81 @@
 		"body": [
 			"export function(${1}){${2}};"
 		]
+	},
+	"Component-miniprogram--Com": {
+		"scope": "javascript, typescript",
+		"prefix": "Com",
+		"body": [
+			"Component({",
+			"    options: {",
+			"        addGlobalClass: true,",
+			"    },",
+			"    properties: {},",
+			"    data: {",
+			"    },",
+			"    methods: {",
+			"    },",
+			"    created: function () {},",
+			"});"
+		],
+		"description": "Component for miniprogram template"
+	},
+	"Component-miniprogram--Component": {
+		"scope": "javascript, typescript",
+		"prefix": "Component",
+		"body": [
+			"Component({",
+			"    options: {",
+			"        addGlobalClass: true,",
+			"    },",
+			"    properties: {},",
+			"    data: {",
+			"    },",
+			"    methods: {",
+			"    },",
+			"    created: function () {},",
+			"});"
+		],
+		"description": "Component for miniprogram template"
+	},
+	"ViewModel-for-miniprogram--Vi": {
+		"scope": "javascript, typescript",
+		"prefix": "Vi",
+		"body": [
+			"ViewModel({",
+			"    options: {",
+			"        addGlobalClass: true,",
+			"    },",
+			"    useQuery: {},",
+			"    useStore: {},",
+			"    properties: {},",
+			"    data: {",
+			"    },",
+			"    methods: {",
+			"    },",
+			"    created: function () {},",
+			"});"
+		],
+		"description": "ViewModel for miniprogram template"
+	},
+	"ViewModel-for-miniprogram--View": {
+		"scope": "javascript, typescript",
+		"prefix": "View",
+		"body": [
+			"ViewModel({",
+			"    options: {",
+			"        addGlobalClass: true,",
+			"    },",
+			"    useQuery: {},",
+			"    useStore: {},",
+			"    properties: {},",
+			"    data: {",
+			"    },",
+			"    methods: {",
+			"    },",
+			"    created: function () {},",
+			"});"
+		],
+		"description": "ViewModel for miniprogram template"
 	}
 }
