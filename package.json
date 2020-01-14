@@ -3,7 +3,10 @@
 	"displayName": "wxml",
 	"description": "snipet",
 	"publisher": "dazi",
-	"version": "0.0.6",
+	"repository": {
+		"url": "https://github.com/jhd124/wx-mapp-vscode-snippest"
+	},
+	"version": "0.0.9",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
