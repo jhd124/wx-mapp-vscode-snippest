@@ -190,5 +190,10 @@
 		"scope":"javascript, typescript",
 		"prefix": ["tapTapable", "tt"],
 		"body": ["tapTapable(page, Selector${1})"]
+	},
+	"page#wait": {
+		"scope":"javascript, typescript",
+		"prefix": ["page.waitFor", "pw"],
+		"body": ["await page.waitFor(Wait.${1|LONG, SHORT, VERY_SHORT|})"]
 	}
 }
