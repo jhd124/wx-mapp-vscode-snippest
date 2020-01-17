@@ -194,6 +194,6 @@
 	"page#wait": {
 		"scope":"javascript, typescript",
 		"prefix": ["page.waitFor", "pw"],
-		"body": ["await page.waitFor(Wait.${1|LONG, SHORT, VERY_SHORT|})"]
+		"body": ["await page.waitFor(WaitTime.${1|LONG,SHORT,VERY_SHORT|})"]
 	}
 }
