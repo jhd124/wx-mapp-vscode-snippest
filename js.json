@@ -181,19 +181,44 @@
 		],
 		"description": "ViewModel for miniprogram template"
 	},
-	"page select element in automatic tool": {
-		"scope":"javascript, typescript",
-		"prefix": ["page.$(Selector)", "ps"],
-		"body": ["page.$(Selector${1})"] 
+	"expect toEqual": {
+		"scope": "javascript, typescript",
+		"prefix": [
+			"eq",
+			"expect().toEqual"
+		],
+		"body": [
+			"expect(${1}).toEqual(${2})"
+		]
 	},
-	"tapTapable": {
-		"scope":"javascript, typescript",
-		"prefix": ["tapTapable", "tt"],
-		"body": ["tapTapable(page, Selector${1})"]
+	"expect toHaveBeenCalledWith": {
+		"scope": "javascript, typescript",
+		"prefix": [
+			"ec",
+			"expect().toHaveBeenCalledWith"
+		],
+		"body": [
+			"expect(${1}).toHaveBeenCalledWith(${2})"
+		]
 	},
-	"page#wait": {
-		"scope":"javascript, typescript",
-		"prefix": ["page.waitFor", "pw"],
-		"body": ["await page.waitFor(WaitTime.${1|LONG,SHORT,VERY_SHORT|})"]
+	"test todo": {
+		"scope": "javascript, typescript",
+		"prefix": [
+			"td",
+			"test.todo()"
+		],
+		"body": [
+			"test.todo(\"${1}\")"
+		]
+	},
+	"test async": {
+		"scope": "javascript, typescript",
+		"prefix": [
+			"ta",
+			"test()"
+		],
+		"body": [
+			"test(\"${1}\", async () => {${2}})"
+		]
 	}
 }
